@@ -1,0 +1,24 @@
+{
+  "_comment": "Conference scheduling and EMC trigger thresholds.",
+  "bac": {
+    "intervalDays": 30,
+    "_comment": "Budget Allocation Conference every N trading days"
+  },
+  "esc": {
+    "intervalDays": 30,
+    "_comment": "Experience Sharing Conference every N trading days"
+  },
+  "emc": {
+    "dailyAmplitudeThresholdPct": 5.0,
+    "_comment_daily": "Trigger EMC if any asset moves >5% in a single day",
+    "threeDayCumulativeThresholdPct": 10.0,
+    "_comment_3day": "Trigger EMC if any asset moves >10% cumulative over 3 days"
+  },
+  "memoryRetentionDays": {
+    "M_MI": 365,
+    "M_IR": 0,
+    "_comment_IR": "0 = keep forever",
+    "M_GE": 0,
+    "_comment_GE": "0 = keep forever"
+  }
+}

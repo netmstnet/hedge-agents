@@ -1,0 +1,8 @@
+node_modules/
+.secrets
+.env
+data/*.db
+data/cache/
+tests/e2e/output/*.csv
+*.log
+.DS_Store

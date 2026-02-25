@@ -1,0 +1,26 @@
+{
+  "_comment": "LLM configuration. Model can be overridden by ANTHROPIC_MODEL env var.",
+  "model": "claude-sonnet-4-6",
+  "temperature": 0.7,
+  "maxTokens": {
+    "decision": 1500,
+    "reflection": 1000,
+    "summarizedQuery": 500,
+    "bacReport": 1200,
+    "bacDecision": 1500,
+    "escCase": 800,
+    "escResponse": 600,
+    "escDistill": 1000,
+    "emcPresentation": 1000,
+    "emcSuggestion": 600,
+    "emcSynthesis": 800,
+    "emcFinalDecision": 800
+  },
+  "retryOnRateLimit": true,
+  "retryDelayMs": 5000,
+  "maxRetries": 3,
+  "memory": {
+    "retrievalK": 5,
+    "_comment": "How many similar memories to retrieve for context"
+  }
+}

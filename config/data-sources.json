@@ -1,0 +1,31 @@
+{
+  "_comment": "Market data and news provider configuration.",
+  "marketData": {
+    "provider": "yahoo-finance2",
+    "interval": "1d",
+    "cacheTtlHours": 24
+  },
+  "news": {
+    "provider": "rss",
+    "_comment_providers": "alpaca | newsapi | rss — rss requires no API key",
+    "rssFeeds": {
+      "BTC-USD": [
+        "https://feeds.feedburner.com/CoinDesk",
+        "https://cointelegraph.com/rss"
+      ],
+      "^DJI": [
+        "https://feeds.content.dowjones.io/public/rss/mw_realtimeheadlines",
+        "https://www.cnbc.com/id/100003114/device/rss/rss.html"
+      ],
+      "EURUSD=X": [
+        "https://www.forexlive.com/feed/news",
+        "https://www.fxstreet.com/rss/news"
+      ],
+      "general": [
+        "https://www.reuters.com/finance/markets/rss",
+        "https://feeds.bbci.co.uk/news/business/rss.xml"
+      ]
+    },
+    "maxHeadlinesPerAsset": 10
+  }
+}

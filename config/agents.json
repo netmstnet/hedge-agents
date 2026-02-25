@@ -1,0 +1,31 @@
+{
+  "_comment": "Define which agents participate. 'manager' is the orchestrator; 'analysts' are the specialists.",
+  "manager": {
+    "name": "Otto",
+    "profile": "otto.xml",
+    "type": "manager"
+  },
+  "analysts": [
+    {
+      "name": "Dave",
+      "profile": "dave.xml",
+      "type": "analyst",
+      "asset": "BTC-USD",
+      "assetLabel": "Bitcoin"
+    },
+    {
+      "name": "Bob",
+      "profile": "bob.xml",
+      "type": "analyst",
+      "asset": "^DJI",
+      "assetLabel": "Dow Jones"
+    },
+    {
+      "name": "Emily",
+      "profile": "emily.xml",
+      "type": "analyst",
+      "asset": "EURUSD=X",
+      "assetLabel": "EUR/USD Forex"
+    }
+  ]
+}

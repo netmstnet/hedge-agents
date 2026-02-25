@@ -1,0 +1,24 @@
+{
+  "_comment": "Portfolio and risk management configuration.",
+  "startingCapital": 100000,
+  "currency": "USD",
+  "riskFreeRate": 0.02,
+  "optimization": {
+    "lambda1": 0.5,
+    "_comment_lambda1": "Risk aversion coefficient for portfolio variance",
+    "lambda2": 0.3,
+    "_comment_lambda2": "Risk aversion coefficient for CVaR",
+    "lambda3": 0.4,
+    "_comment_lambda3": "EMC: weight balance between peer suggestions and expert (Otto)",
+    "cvarConfidence": 0.95
+  },
+  "initialBudgetWeights": {
+    "Dave": 0.33,
+    "Bob": 0.34,
+    "Emily": 0.33
+  },
+  "maxPositionPct": 0.90,
+  "_comment_maxPosition": "Max % of assigned budget an agent can deploy in one position",
+  "minCashReservePct": 0.10,
+  "_comment_minCash": "Min % of assigned budget kept as cash"
+}

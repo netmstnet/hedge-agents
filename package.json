@@ -1,0 +1,28 @@
+{
+  "name": "hedge-agents",
+  "version": "1.0.0",
+  "description": "HedgeAgents: Modular multi-agent financial analysis system. Template for trading, investment and risk analysis.",
+  "main": "src/index.cjs",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "start": "node src/index.cjs",
+    "backtest": "node scripts/backtest.cjs",
+    "paper-trade": "node scripts/paper-trade.cjs",
+    "seed-memory": "node scripts/seed-memory.cjs",
+    "test": "node --test tests/unit/*.test.cjs",
+    "test:integration": "node --test tests/integration/*.test.cjs",
+    "test:e2e": "node --test tests/e2e/simulation.test.cjs",
+    "test:all": "node --test tests/unit/*.test.cjs tests/integration/*.test.cjs"
+  },
+  "dependencies": {
+    "better-sqlite3": "^9.4.3",
+    "fast-xml-parser": "^4.3.5",
+    "yahoo-finance2": "^2.11.3"
+  },
+  "devDependencies": {},
+  "keywords": ["hedge-fund", "multi-agent", "llm", "trading", "analysis", "template"],
+  "license": "MIT"
+}
